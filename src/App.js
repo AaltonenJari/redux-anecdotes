@@ -1,17 +1,23 @@
 import { useDispatch, useSelector } from 'react-redux'
 
 function App() {
-  const value = useSelector(state => state)
+  const counter = useSelector(state => state)
   const dispatch = useDispatch()
 
   return (
-    <div>
-      <div>{value}</div>
-      <button onClick={() => dispatch({ type: 'INC' })}>
-        +
+   <div>
+      <div>{counter}</div>
+      <button onClick={() => dispatch({ type: 'INCREMENT' })}>
+        plus
       </button>
-    </div>
-  )
+      <button onClick={() => dispatch({ type: 'DECREMENT' })}>
+        minus
+      </button>
+      <button onClick={() => dispatch({ type: 'ZERO' })}>
+        zero
+      </button>
+    </div>  
+  );
 }
 
 export default App
