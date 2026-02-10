@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "server": "json-server -p 3001 db.json",
     "lint": "eslint .",
     "eject": "react-scripts eject"
   },
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.5"
   }
 }
