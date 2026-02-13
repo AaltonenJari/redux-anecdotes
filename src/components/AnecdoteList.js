@@ -16,8 +16,8 @@ const AnecdoteList = () => {
 
   const vote = (id) => {
     dispatch(voteAnecdote(id))
-    const votedAnecdote = anecdotes.find(a => a.id === id)
-    dispatch(setNotification(`You voted '${votedAnecdote.content}'`, 5))
+    const anecdote = anecdotes.find(a => a.id === id)
+    dispatch(setNotification(`You voted '${anecdote.content}'`, 5))
   }
 
   return (

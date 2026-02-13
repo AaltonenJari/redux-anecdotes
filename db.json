@@ -48,6 +48,16 @@
     {
       "id": "0a1f",
       "content": "uusia",
+      "votes": 4
+    },
+    {
+      "id": "5a21",
+      "content": "tehdään uusi anecdote",
+      "votes": 0
+    },
+    {
+      "id": "b559",
+      "content": "tehdään toinen uusi anecdote",
       "votes": 0
     }
   ]
